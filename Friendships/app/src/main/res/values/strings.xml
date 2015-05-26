@@ -7,6 +7,14 @@
     <string name="friends_list">Friends List</string>
     <string name="my_profile">My Profile</string>
     <string name="log_out">Log Out</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_view_deliveries">ViewDeliveries</string>
+    <string name="title_activity_create_delivery">CreateDelivery</string>
+    <string name="title_activity_friends_list">FriendsList</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_add_friend_results">AddFriendResults</string>
+    <string name="title_activity_notifications">Notifications</string>
 
 
 

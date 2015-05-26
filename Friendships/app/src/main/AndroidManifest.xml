@@ -20,6 +20,38 @@
             android:name=".welcome"
             android:label="@string/title_activity_welcome" >
         </activity>
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name=".ViewDeliveries"
+            android:label="@string/title_activity_view_deliveries" >
+        </activity>
+        <activity
+            android:name=".CreateDelivery"
+            android:label="@string/title_activity_create_delivery" >
+        </activity>
+        <activity
+            android:name=".FriendsList"
+            android:label="@string/title_activity_friends_list" >
+        </activity>
+        <activity
+            android:name=".Profile"
+            android:label="@string/title_activity_profile" >
+        </activity>
+        <activity
+            android:name=".Register"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name=".AddFriendResults"
+            android:label="@string/title_activity_add_friend_results" >
+        </activity>
+        <activity
+            android:name=".Notifications"
+            android:label="@string/title_activity_notifications" >
+        </activity>
     </application>
 
 </manifest>
