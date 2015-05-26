@@ -28,5 +28,31 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Delivery"
+        android:id="@+id/createdelivery"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Deliveries"
+        android:id="@+id/viewdeliveries"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/createdelivery"
+        android:layout_alignStart="@+id/createdelivery" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Friend"
+        android:id="@+id/addfriend"
+        android:layout_below="@+id/viewdeliveries"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp" />
+
 
 </RelativeLayout>
