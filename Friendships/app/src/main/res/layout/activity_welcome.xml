@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Hello, John"
+        android:text="Hello <username here>"
         android:id="@+id/textview_greeting"
         android:layout_below="@+id/imageview_profile"
         android:layout_centerHorizontal="true"
