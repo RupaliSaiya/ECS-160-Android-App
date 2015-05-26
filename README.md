@@ -2,8 +2,8 @@
 Friends Parcel Delivery System
 
 ##Contributors
-Rupali
-Uriah
+Rupali  <br>
+Uriah   <br>
 Arthur
 
 ##Working
