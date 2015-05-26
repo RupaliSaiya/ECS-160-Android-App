@@ -15,7 +15,10 @@
     <string name="title_activity_register">Register</string>
     <string name="title_activity_add_friend_results">AddFriendResults</string>
     <string name="title_activity_notifications">Notifications</string>
-
+    <string name="welcome_message">Hello username</string>
+    <string name="view_deliveries">View Deliveries</string>
+    <string name="create_delivery">Create Delivery</string>
+    <string name="add_friend">Add Friend</string>
 
 
 </resources>

@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Hello <username here>"
+        android:text="@string/welcome_message"
         android:id="@+id/textview_greeting"
         android:layout_below="@+id/imageview_profile"
         android:layout_centerHorizontal="true"
@@ -31,7 +31,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Create Delivery"
+        android:text="@string/create_delivery"
         android:id="@+id/createdelivery"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
@@ -39,7 +39,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="View Deliveries"
+        android:text="@string/view_deliveries"
         android:id="@+id/viewdeliveries"
         android:layout_marginTop="44dp"
         android:layout_below="@+id/createdelivery"
@@ -48,7 +48,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Friend"
+        android:text="@string/add_friend"
         android:id="@+id/addfriend"
         android:layout_below="@+id/viewdeliveries"
         android:layout_centerHorizontal="true"
