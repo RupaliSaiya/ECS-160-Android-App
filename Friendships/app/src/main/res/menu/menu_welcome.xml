@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="me.vable.android.viewandlayoutlessons.WelcomeActivity" >
+
+    <!-- Friends List-->
+    <item android:id="@+id/menu_friends_list"
+        android:title="@string/friends_list"
+        android:orderInCategory="1"
+        app:showAsAction="never" />
+
+    <!-- My Profile -->
+    <item android:id="@+id/menu_profile"
+        android:title="@string/my_profile"
+        android:orderInCategory="2"
+        app:showAsAction="never" />
+
+    <!-- Logout -->
+    <item android:id="@+id/menu_logout"
+        android:title="@string/log_out"
+        android:orderInCategory="3"
+        app:showAsAction="never" />
+</menu>
