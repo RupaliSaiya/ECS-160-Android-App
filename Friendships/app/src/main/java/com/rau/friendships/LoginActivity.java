@@ -1,9 +1,11 @@
 package com.rau.friendships;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class LoginActivity extends ActionBarActivity {
@@ -28,12 +30,47 @@ public class LoginActivity extends ActionBarActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        /** Don't need a menu on the home screen **/
         //noinspection SimplifiableIfStatement
-        //if (id == R.id.action_settings) {
-        //    return true;
-        //}
+        if (id == R.id.action_settings) {
+            return true;
+        }
 
         return super.onOptionsItemSelected(item);
     }
+
+
+    /** All button calls/activities go here **/
+
+    //Called when the user clicks the [ Sign Up ] button
+    public void signUp(View view) {
+        Intent intent = new Intent(this, Register.class);
+        startActivity(intent);
+    }
+
+    //Called when the user clicks the [ Login ] button
+    public void login(View view){
+        /**
+         * This is really basic code for the login activity
+         * All this does is direct the user to the welcome
+         * page when hitting the button.
+         *
+         * We'll need to:
+         * 1) capture user name and password and compare it
+         *    to the database
+         * 2) throw errors/messages if user not found, etc.
+         */
+        Intent intent = new Intent(this, welcome.class);
+        startActivity(intent);
+    }
+
+    //Called when the user clicks the [ Forgot Password ] button
+    public void forgotPassword(View view){
+        // code goes here
+    }
+
+    //Called when the user checks the [ Remember Me ] box
+    /** [ Remember Me ] check box function goes here **/
+
+
+
 }

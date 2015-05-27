@@ -3,31 +3,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.rau.friendships.LoginActivity"
-    >
+    android:background="#ffffffff">
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="150dp"
         android:id="@+id/imageview_app_logo"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:src="@mipmap/logo"
         android:adjustViewBounds="true"
         android:padding="32dp"
-        android:background="#fffbf8ff"
-        android:layout_marginBottom="16dp"
+        android:background="#ffffffff"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="false" />
 
     <EditText
         android:id="@+id/edittext_username"
-        android:layout_centerHorizontal="true"
         android:hint="@string/username"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageview_app_logo"
         android:singleLine="true"
-        android:maxLines="1"/>
+        android:maxLines="1"
+        android:layout_marginTop="75dp"
+        android:layout_below="@+id/imageview_app_logo"
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:id="@+id/edittext_password"
@@ -52,17 +52,6 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="16dp"/>
 
-    <TextView
-        android:id="@+id/textview_forgot_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="@string/forgot_password"
-        android:layout_below="@+id/checkbox_remember_me"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:textColor="#FF4040"/>
-
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
@@ -81,7 +70,8 @@
             android:layout_height="wrap_content"
             android:text="@string/sign_up"
             android:layout_weight="1"
-            android:background="#ff2057ff" />
+            android:background="#ff2057ff"
+            android:onClick="signUp" />
 
         <Button
             android:id="@+id/button_login"
@@ -90,7 +80,28 @@
             android:text="@string/login"
             android:layout_weight="1"
             android:background="#ff2057ff"
-            android:layout_marginLeft="5dip" />
+            android:layout_marginLeft="5dip"
+            android:onClick="login"/>
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/fpds"
+        android:id="@+id/descriptionTextView"
+        android:layout_alignBottom="@+id/imageview_app_logo"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password"
+        android:id="@+id/forgotPasswordButton"
+        android:background="#ffffffff"
+        android:textColor="#ffff0100"
+        android:layout_below="@+id/checkbox_remember_me"
+        android:layout_centerHorizontal="true"
+        android:onClick="forgotPassword"/>
 </RelativeLayout>

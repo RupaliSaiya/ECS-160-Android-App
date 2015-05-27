@@ -29,6 +29,7 @@
     <string name="title_activity_add_friend">AddFriend</string>
     <string name="search_user">Search User...</string>
     <string name="find_friend">Find Friend!</string>
+    <string name="fpds">a friends parcel delivery service</string>
 
 
 </resources>
