@@ -30,6 +30,7 @@
     <string name="search_user">Search User...</string>
     <string name="find_friend">Find Friend!</string>
     <string name="fpds">a friends parcel delivery service</string>
+    <string name="dashboard">Dashboard</string>
 
 
 </resources>

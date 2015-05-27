@@ -1,5 +1,6 @@
 package com.rau.friendships;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -21,18 +22,48 @@ public class Notifications extends ActionBarActivity {
         return true;
     }
 
+    // Menu actions
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.menu_friends_list) {
+            goToFriendsList();
+            return true;
+        }else if (id == R.id.menu_profile) {
+            goToProfile();
+            return true;
+        }else if (id == R.id.menu_logout) {
+            logout();
+            return true;
+        }else if(id == R.id.menu_dashboard){
+            goToDashboard();
             return true;
         }
-
         return super.onOptionsItemSelected(item);
+    }
+
+    /** Define all of the menu actions here **/
+
+    // friendslist
+    private void goToFriendsList() {
+        Intent intent = new Intent(this, FriendsList.class);
+        startActivity(intent);
+    }
+
+    // profile
+    private void goToProfile() {
+        Intent intent = new Intent(this,Profile.class);
+        startActivity(intent);
+    }
+
+    // dashboard
+    private void goToDashboard(){
+        Intent intent = new Intent(this, welcome.class);
+        startActivity(intent);
+    }
+
+    // logout
+    private void logout() {
+        finish();
     }
 }

@@ -15,9 +15,15 @@
         android:orderInCategory="2"
         app:showAsAction="never" />
 
+    <!-- Notifications -->
+    <item android:id="@+id/menu_notifications"
+        android:title="@string/title_activity_notifications"
+        android:orderInCategory="3"
+        app:showAsAction="never" />
+
     <!-- Logout -->
     <item android:id="@+id/menu_logout"
         android:title="@string/log_out"
-        android:orderInCategory="3"
+        android:orderInCategory="4"
         app:showAsAction="never" />
 </menu>

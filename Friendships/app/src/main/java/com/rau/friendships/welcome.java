@@ -36,6 +36,9 @@ public class welcome extends ActionBarActivity {
         }else if (id == R.id.menu_logout) {
             logout();
             return true;
+        }else if(id == R.id.menu_notifications){
+            goToNotifications();
+            return true;
         }
         return super.onOptionsItemSelected(item);
     }
@@ -43,23 +46,25 @@ public class welcome extends ActionBarActivity {
     /** Define all of the menu actions here **/
 
     // friendslist
-    private void goToFriendsList()
-    {
+    private void goToFriendsList() {
         Intent intent = new Intent(this, FriendsList.class);
         startActivity(intent);
     }
 
     // profile
-    private void goToProfile()
-    {
+    private void goToProfile() {
         Intent intent = new Intent(this,Profile.class);
         startActivity(intent);
     }
 
-    // logout
-    private void logout()
-    {
+    // notifications
+    private void goToNotifications(){
+        Intent intent = new Intent(this, Notifications.class);
+        startActivity(intent);
+    }
 
+    // logout
+    private void logout() {
         finish();
     }
 
