@@ -69,7 +69,8 @@
         android:background="#ff2057ff"
         android:layout_below="@+id/radiogroup_gender"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp" />
+        android:layout_marginTop="30dp"
+        android:onClick="submitRegistration"/>
 
     <TextView
         android:layout_width="wrap_content"

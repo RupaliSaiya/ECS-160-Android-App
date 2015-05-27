@@ -4,6 +4,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class Register extends ActionBarActivity {
@@ -34,5 +35,12 @@ public class Register extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    /** Button actions go here **/
+
+    //Called when the user clicks [ Submit ]
+    public void submitRegistration(View view){
+        // code goes here
     }
 }

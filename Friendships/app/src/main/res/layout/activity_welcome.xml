@@ -36,7 +36,8 @@
         android:id="@+id/createdelivery"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:background="#ff2057ff" />
+        android:background="#ff2057ff"
+        android:onClick="createDelivery"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -46,7 +47,8 @@
         android:layout_marginTop="44dp"
         android:layout_below="@+id/createdelivery"
         android:layout_alignStart="@+id/createdelivery"
-        android:background="#ff2057ff" />
+        android:background="#ff2057ff"
+        android:onClick="viewDeliveries"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -56,7 +58,8 @@
         android:layout_below="@+id/viewdeliveries"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="44dp"
-        android:background="#ff2057ff" />
+        android:background="#ff2057ff"
+        android:onClick="addFriend"/>
 
 
 </RelativeLayout>
