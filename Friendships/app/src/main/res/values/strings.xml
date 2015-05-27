@@ -8,17 +8,27 @@
     <string name="my_profile">My Profile</string>
     <string name="log_out">Log Out</string>
     <string name="title_activity_home">Home</string>
-    <string name="title_activity_view_deliveries">ViewDeliveries</string>
-    <string name="title_activity_create_delivery">CreateDelivery</string>
+    <string name="title_activity_view_deliveries">View Deliveries</string>
+    <string name="title_activity_create_delivery">Create Delivery</string>
     <string name="title_activity_friends_list">FriendsList</string>
     <string name="title_activity_profile">Profile</string>
     <string name="title_activity_register">Register</string>
-    <string name="title_activity_add_friend_results">AddFriendResults</string>
+    <string name="title_activity_add_friend_results">Add Friend Results</string>
     <string name="title_activity_notifications">Notifications</string>
     <string name="welcome_message">Hello username</string>
-    <string name="view_deliveries">View Deliveries</string>
-    <string name="create_delivery">Create Delivery</string>
     <string name="add_friend">Add Friend</string>
+    <string name="username">Username </string>
+    <string name="email">Email </string>
+    <string name="password">Password </string>
+    <string name="profile_pic_descriptor">Profile Pic</string>
+    <string name="submit">Submit</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="title_activity_add_friend">AddFriend</string>
+    <string name="search_user">Search User...</string>
+    <string name="find_friend">Find Friend!</string>
 
 
 </resources>

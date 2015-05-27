@@ -6,7 +6,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="me.vable.android.viewandlayoutlessons.WelcomeActivity">
+    tools:context="com.rau.friendships.welcome">
 
     <ImageView
         android:layout_width="100dp"
@@ -16,7 +16,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
-        android:src="@mipmap/ic_man" />
+        android:src="@mipmap/ic_man"
+        android:contentDescription="@string/profile_pic_descriptor" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -31,19 +32,21 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/create_delivery"
+        android:text="@string/title_activity_create_delivery"
         android:id="@+id/createdelivery"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:background="#ff2057ff" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/view_deliveries"
+        android:text="@string/title_activity_view_deliveries"
         android:id="@+id/viewdeliveries"
         android:layout_marginTop="44dp"
         android:layout_below="@+id/createdelivery"
-        android:layout_alignStart="@+id/createdelivery" />
+        android:layout_alignStart="@+id/createdelivery"
+        android:background="#ff2057ff" />
 
     <Button
         android:layout_width="wrap_content"
@@ -52,7 +55,8 @@
         android:id="@+id/addfriend"
         android:layout_below="@+id/viewdeliveries"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="44dp" />
+        android:layout_marginTop="44dp"
+        android:background="#ff2057ff" />
 
 
 </RelativeLayout>
