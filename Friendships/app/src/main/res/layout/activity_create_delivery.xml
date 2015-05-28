@@ -8,8 +8,83 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.rau.friendships.CreateDelivery">
 
-    <TextView android:text="@string/hello_world"
+    <EditText
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/new_delivery"
+        android:ems="10"
+        android:id="@+id/deliverytitle"
+        android:layout_above="@+id/time"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/time" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time"
+        android:text="@string/time"
+        android:layout_above="@+id/location"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:inputType="time" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/location"
+        android:text="@string/location"
+        android:layout_above="@+id/recipient"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:inputType="textPostalAddress" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recipient"
+        android:text="@string/recipient"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/extrainfo"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/extrainfo"
+        android:text="@string/extra_info"
+        android:inputType="textLongMessage|textMultiLine"
+        android:layout_below="@+id/recipient"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/time" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mutual_friend"
+        android:id="@+id/intermediary"
+        android:checked="false"
+        android:layout_above="@+id/newdelivery"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="63dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create"
+        android:id="@+id/newdelivery"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="47dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/title_activity_create_delivery"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/newdelivery" />
 
 </RelativeLayout>

@@ -23,6 +23,7 @@
     <string name="profile_pic_descriptor">Profile Pic</string>
     <string name="submit">Submit</string>
     <string name="login">Login</string>
+    <string name="logout">Logout</string>
     <string name="sign_up">Sign Up</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="remember_me">Remember Me</string>
@@ -31,6 +32,11 @@
     <string name="find_friend">Find Friend!</string>
     <string name="fpds">a friends parcel delivery service</string>
     <string name="dashboard">Dashboard</string>
-
-
+    <string name="new_delivery">Delivery Name</string>
+    <string name="time">Time</string>
+    <string name="location">Location</string>
+    <string name="extra_info">Additional Information</string>
+    <string name="recipient">Recipient</string>
+    <string name="mutual_friend">Notify mutual friends to help me!</string>
+    <string name="create">Create Delivery</string>
 </resources>

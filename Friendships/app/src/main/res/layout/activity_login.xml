@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.rau.friendships.LoginActivity"
-    android:background="#ffffffff">
+    android:background="#ffffffff"
+    android:id="@+id/log">
 
     <ImageView
         android:layout_width="match_parent"
