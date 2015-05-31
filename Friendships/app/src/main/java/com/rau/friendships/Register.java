@@ -37,7 +37,7 @@ import com.android.volley.VolleyError;
 
 
 
-public class Register extends Activity {
+public class Register extends ActionBarActivity {
 
     private static final String TAG = Register.class.getSimpleName();
     private Button button_regs;
@@ -72,29 +72,59 @@ public class Register extends Activity {
             finish();
         }
 
-        // register button action
-        button_regs.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                String name = input_name.getText().toString();
-                String email = input_email.getText().toString();
-                String password = input_password.getText().toString();
-
-                if (!name.isEmpty() && !email.isEmpty() && !password.isEmpty()) {
-                    registerUser(name, email, password);
-                }
-
-                else {
-                    Toast.makeText(getApplicationContext(),
-                            "Please enter your details!",
-                            Toast.LENGTH_LONG).show();
-                }
-            }
-        });
     } // end onCreate
 
+    private void showDialog() {
+        if (!progress_dialog.isShowing())
+            progress_dialog.show();
+    }
+
+    private void hideDialog() {
+        if (progress_dialog.isShowing())
+            progress_dialog.dismiss();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_register, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    /** Button actions go here **/
+
+    //Called when the user clicks [ Submit ]
+    public void submitRegistration(View view) {
+        String name = input_name.getText().toString();
+        String email = input_email.getText().toString();
+        String password = input_password.getText().toString();
+
+        if (!name.isEmpty() && !email.isEmpty() && !password.isEmpty()) {
+            registerUser(name, email, password);
+        } else {
+            Toast.makeText(getApplicationContext(),
+                    "Please enter your details!",
+                    Toast.LENGTH_LONG).show();
+        }
+    } // end of submitRegistration
 
     private void registerUser(final String name, final String email,
-                              final String password) {
+    final String password) {
         // Tag used to cancel the request
         String tag_string_req = "req_register";
 
@@ -125,10 +155,10 @@ public class Register extends Activity {
                         // Inserting row in users table
                         db.addUser(name, email, uid, created_at);
 
-                        // Launch login activity
-                        Intent intent = new Intent(Register.this, LoginActivity.class);
-                        startActivity(intent);
-                        finish();
+//                        // Launch login activity
+//                        Intent intent = new Intent(Register.this, LoginActivity.class);
+//                        startActivity(intent);
+//                        finish();
                     } else {
 
                         // Error occurred in registration. Get the error
@@ -169,44 +199,6 @@ public class Register extends Activity {
 
         // Adding request to request queue
         AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
-    }
 
-    private void showDialog() {
-        if (!progress_dialog.isShowing())
-            progress_dialog.show();
-    }
-
-    private void hideDialog() {
-        if (progress_dialog.isShowing())
-            progress_dialog.dismiss();
-    }
-
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        // Inflate the menu; this adds items to the action bar if it is present.
-//        getMenuInflater().inflate(R.menu.menu_register, menu);
-//        return true;
-//    }
-//
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        // Handle action bar item clicks here. The action bar will
-//        // automatically handle clicks on the Home/Up button, so long
-//        // as you specify a parent activity in AndroidManifest.xml.
-//        int id = item.getItemId();
-//
-//        //noinspection SimplifiableIfStatement
-//        if (id == R.id.action_settings) {
-//            return true;
-//        }
-//
-//        return super.onOptionsItemSelected(item);
-//    }
-//
-//    /** Button actions go here **/
-//
-//    //Called when the user clicks [ Submit ]
-//    public void submitRegistration(View view){
-//        // code goes here
-//    }
-}
+    } // end of registerUser
+} // end of main class

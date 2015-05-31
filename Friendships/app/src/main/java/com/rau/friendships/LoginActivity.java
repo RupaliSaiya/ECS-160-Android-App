@@ -27,7 +27,7 @@ import com.android.volley.VolleyError;
 
 
 
-public class LoginActivity extends Activity {
+public class LoginActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
