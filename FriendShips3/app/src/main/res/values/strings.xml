@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FriendShips</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="Username" />
+    <string name="Password" />
+    <string name="title_activity_welcome">Welcome</string>
+    <string name="title_activity_register">Register</string>
+    <string name="emptyString" />
+</resources>
