@@ -1,84 +1,156 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.rau.friendships.Register">
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp" >
 
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:adjustViewBounds="true"
-        android:id="@+id/imageview_profile"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp"
-        android:src="@mipmap/ic_man"
-        android:contentDescription="@string/profile_pic_descriptor" />
-
-    <EditText
-        android:id="@+id/edittext_username"
-        android:layout_width="250dp"
+    <LinearLayout
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:hint="@string/username"
-        android:layout_below="@+id/imageview_profile"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp" />
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
 
-    <EditText
-        android:id="@+id/edittext_password"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:hint="@string/password"
-        android:password="true"
-        android:layout_below="@+id/edittext_username"
-        android:layout_centerHorizontal="true"
-        />
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/username"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:inputType="textCapWords" />
 
-    <EditText
-        android:id="@+id/edittext_email"
-        android:inputType="textEmailAddress"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:hint="@string/email"
-        android:layout_below="@+id/edittext_password"
-        android:layout_centerHorizontal="true"
-        />
-    <RadioGroup
-        android:id="@+id/radiogroup_gender"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_below="@+id/edittext_email"
-        android:layout_centerHorizontal="true"
-        >
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:singleLine="true"/>
 
-    </RadioGroup>
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:singleLine="true" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/submit"
-        android:id="@+id/submit_button"
-        android:background="#ff2057ff"
-        android:layout_below="@+id/radiogroup_gender"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:onClick="submitRegistration"/>
+        <!-- Login Button -->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/title_activity_register"
-        android:id="@+id/registerTextView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="#ea4c88"
+            android:text="@string/title_activity_register" />
 
-</RelativeLayout>
+        <!-- Link to Login Screen -->
+
+        <Button
+            android:id="@+id/btnLinkToLoginScreen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:background="@null"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingTop="@dimen/activity_vertical_margin"-->
+    <!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+    <!--tools:context="com.rau.friendships.Register">-->
+
+    <!--<ImageView-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:adjustViewBounds="true"-->
+        <!--android:id="@+id/imageview_profile"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="32dp"-->
+        <!--android:src="@mipmap/ic_man"-->
+        <!--android:contentDescription="@string/profile_pic_descriptor" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/edittext_username"-->
+        <!--android:layout_width="250dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:hint="@string/username"-->
+        <!--android:layout_below="@+id/imageview_profile"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="16dp" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/edittext_password"-->
+        <!--android:layout_width="250dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:hint="@string/password"-->
+        <!--android:password="true"-->
+        <!--android:layout_below="@+id/edittext_username"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--/>-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/edittext_email"-->
+        <!--android:inputType="textEmailAddress"-->
+        <!--android:layout_width="250dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:hint="@string/email"-->
+        <!--android:layout_below="@+id/edittext_password"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--/>-->
+    <!--<RadioGroup-->
+        <!--android:id="@+id/radiogroup_gender"-->
+        <!--android:layout_width="250dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_below="@+id/edittext_email"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!-->-->
+
+    <!--</RadioGroup>-->
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/submit"-->
+        <!--android:id="@+id/submit_button"-->
+        <!--android:background="#ff2057ff"-->
+        <!--android:layout_below="@+id/radiogroup_gender"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="30dp"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:text="@string/title_activity_register"-->
+        <!--android:id="@+id/registerTextView"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true" />-->
+
+<!--</RelativeLayout>-->
